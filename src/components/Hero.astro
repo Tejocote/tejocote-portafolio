@@ -4,7 +4,7 @@ import Redes from "./Redes.astro";
 import Skills from "./Skills.astro";
 ---
 
-<section class="px-4">
+<section class="px-4 font-onest">
   <div
     class="grid grid-cols-2 grid-rows-9 md:grid-cols-6 md:grid-rows-6 lg:grid-cols-12 w-full gap-4 h-[610px] max-w-screen-xl m-auto mt-4 place-content-center"
   >
@@ -21,9 +21,10 @@ import Skills from "./Skills.astro";
         />
       </figure>
       <div class="flex flex-col">
-        <h3 class="text-pretty font-bold">Soy Cesarin Tejocote</h3>
-        <a
-          class="text-pretty text-zinc-900 font-medium bg-[#FCC100] rounded-lg px-4 py-1 mt-4 hover:bg-[#F1A300] mx-auto"
+        <h2 class="text-sm mb-2">Desarrollador web</h2>
+        <h3 class="text-pretty font-black">Cesarin Tejocote</h3>
+        <a href="#About"
+          class="text-pretty text-zinc-900 font-bold bg-[#FCC100] rounded-lg px-4 py-1 mt-4 hover:bg-[#F1A300] mx-auto"
           >Acerca de mí</a
         >
       </div>
@@ -40,14 +41,14 @@ import Skills from "./Skills.astro";
     >
       <Skills />
     </div>
-    <Proyectos />
+      <Proyectos />
     <div
-      class="row-span-2 col-span-2 p-6 gap-4 lg:row-span-3 lg:col-span-6 bg-[#174793] text-white flex items-center rounded-2xl"
+      class="row-span-2 col-span-1 md:col-span-2 md:row-span-3 p-6 gap-4 lg:row-span-3 lg:col-span-6 bg-[#174793] text-white flex items-center rounded-2xl"
     >
       <p class="text-pretty text-center">Educación</p>
     </div>
     <div
-      class="row-span-1 col-span-2 p-6 gap-4 md:col-span-4 lg:col-span-3 lg:row-span-2 bg-[#174793] text-white flex items-center rounded-2xl"
+      class="row-span-1 col-span-1 p-6 gap-4 md:col-span-4 lg:col-span-3 lg:row-span-2 bg-[#174793] text-white flex items-center rounded-2xl"
     >
       <p class="text-pretty text-center">Contactame</p>
     </div>

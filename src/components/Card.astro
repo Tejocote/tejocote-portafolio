@@ -9,12 +9,12 @@ interface Props {
 const { href, title, body, color } = Astro.props;
 ---
 
-<div class="col-span-2 mx-4">
+<div class="col-span-2 mx-4 bg-[#174793] rounded-2xl text-white">
 	<a href={href}>
-		<div class=`w-full h-36 rounded-lg bg-[#FCC100] mb-6`>
+		<div class=`w-full h-36 rounded-t-2xl bg-[#FCC100] mb-2`>
 
 		</div>
-		<div class="text-md ">
+		<div class="text-md p-4">
 			<h2 class=`text-center text-lg font-bold mb-2`>
 				{title}
 			</h2>
