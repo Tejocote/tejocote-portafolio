@@ -3,16 +3,18 @@ interface Props {
 	title: string;
 	body: string;
 	href: string;
-	color: string;
+	src?: string;
 }
 
-const { href, title, body, color } = Astro.props;
+const { href, title, body, src } = Astro.props;
 ---
 
-<div class="col-span-2 mx-4 bg-[#174793] rounded-2xl text-white">
+<div class="col-span-2 mx-4 bg-[#174793] rounded-2xl text-white overflow-hidden">
 	<a href={href}>
-		<div class=`w-full h-36 rounded-t-2xl bg-[#FCC100] mb-2`>
-
+		<div class=`w-full rounded-t-2xl bg-[#FCC100] mb-2`>
+			<figure class="aspect-video ">
+				<img src={src} alt="">
+			</figure>
 		</div>
 		<div class="text-md p-4">
 			<h2 class=`text-center text-lg font-bold mb-2`>
