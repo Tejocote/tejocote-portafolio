@@ -2,7 +2,7 @@
 import BtnProjects from "./BtnProjects.astro";
 import Redes from "./Redes.astro";
 import Skills from "./Skills.astro";
-import {Projects} from "./Projects.jsx";
+import Projects from "./Projects.jsx";
 
 ---
 
@@ -32,7 +32,7 @@ import {Projects} from "./Projects.jsx";
       </div>
     </div>
 
-    <Projects />
+    <Projects client:load/>
     <div
       class="row-span-3 gap-4 md:col-span-1 lg:row-span-3 lg:col-span-2 bg-[#174793] text-white flex items-center rounded-2xl"
     >
