@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import BtnProjects from "./BtnProjects.astro";
 
 function Projects() {
   const [btnState, setBtnState] = useState(false);
@@ -7,12 +8,12 @@ function Projects() {
     setBtnState((btnState) => !btnState);
   }
 
-  let toggleClassCheck = btnState ? " active" : null;
+  let toggleClassCheck = btnState ? "hidden" : null;
 
   return (
-    <button onClick={handleClick} className="row-span-3 col-span-2 gap-4 md:col-span-4 lg:row-span-6 lg:col-span-4 bg-[#174793] text-white flex items-center rounded-2xl overflow-hidden ">
-      <div className="bg-[#174793] w-full h-full rounded-2xl flex flex-col items-center group ">
-          <h3 className="text text-2xl my-2 font-bold"> Proyectos</h3>
+    <button onClick={handleClick} className={"row-span-3 col-span-2 gap-4 md:col-span-4 lg:row-span-6 lg:col-span-4 bg-[#174793] text-white flex items-center rounded-2xl overflow-" + (toggleClassCheck)}>
+      <div className="bg-[#174793] w-full h-full rounded-2xl items-center">
+          <h3 className="text text-xl font-bold"> Proyectos</h3>
         <div className="flex w-full h-full lg:flex-col lg:rounded-2xl text-center pt-2 rounded-2xl">
           <div className="bg-green-400 bg-cover w-full h-full flex items-center justify-center overflow-hidden">
             <h4 className="m-auto font-onest text-xl font-bold text-white rounded-lg bg-green-700 px-4 py-2">
