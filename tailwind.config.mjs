@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
-        'nebuverse': "url('https://axeldevport.netlify.app/Project-1.webp')",
+        'nebuverse': "url('https://nebuverse.netlify.app/poster.webp')",
         'evergreen': "url('/evergreen.webp')",
 			},
 			fontFamily: {
@@ -12,5 +12,5 @@ export default {
 			}
 		}
 		},
-	plugins: [],
+	plugins: [require('tailwindcss-animated')],
 }
