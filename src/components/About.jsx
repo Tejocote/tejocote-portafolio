@@ -1,7 +1,7 @@
 export default function About() {
   return(
 <div
-      class="w-4/6 bg-[#174793] text-white flex flex-col text-center rounded-2xl justify-evenly p-4 items-center"
+      class="w-5/6 h-1/3 bg-[#174793] text-white flex text-center rounded-2xl justify-evenly p-4 items-center"
     >
       <figure
         class="w-32 h-32 sm:w-36 rounded-full sm:h-36 flex justify-center mb-4"

@@ -8,7 +8,7 @@ import Theme from "./Theme.jsx";
 export function Pruebas() {
   return (
     <section className="bg-[#303030] h-svh px-2">
-      <div className="w-full h-full flex flex-wrap justify-center">
+      <div className="w-full h-svh overflow-hidden gap-y-2 flex flex-wrap justify-center">
         <About/>
         <Redes/>
         <Projects/>

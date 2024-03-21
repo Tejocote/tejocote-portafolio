@@ -1,11 +1,11 @@
 export default function Skills() {
   return (
-    <div className="h-[120px] rounded-2xl w-4/6 overflow-hidden bg-blue-400">
-      <div className="flex w-full items-center justify-center">
-        <h3 className="text-lg font-semibold p-2">Habilidades</h3>
+    <div className="h-1/6 rounded-2xl w-4/6 overflow-hidden bg-blue-400">
+      <div className="flex justify-center">
+        <h3 className="text-lg font-semibold">Habilidades</h3>
       </div>
-      <div className="w-full inline-flex flex-nowrap overflow-hidden">
-      <ul className="flex items-center gap-x-2  animate-infinite-scroll ">
+      <div className="w-full inline-flex [&_li]:mx-2 flex-nowrap overflow-hidden">
+      <ul className="flex items-center animate-infinite-scroll ">
         <li>
           <svg
             stroke="currentColor"
@@ -80,7 +80,7 @@ export default function Skills() {
           </svg>
         </li>
       </ul>
-      <ul className="flex items-center gap-x-2 animate-infinite-scroll" aria-hidden="true">
+      <ul className="flex items-center animate-infinite-scroll" aria-hidden="true">
         <li>
           <svg
             stroke="currentColor"
