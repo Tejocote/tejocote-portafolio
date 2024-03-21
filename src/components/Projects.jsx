@@ -7,18 +7,14 @@ function Projects() {
     setBtnState((btnState) => !btnState);
   }
 
-  let toggleClassCheck = btnState ? "overflow-visible max-w-screen-2xl" : null;
+  let toggleClassCheck = btnState ? " w-full h-full" : "w-4/6 h-1/2";
+  let notAbout = btnState ? "duration-200 translate-x-10 opacity-0 hidden" : "opacity-100";
 
   return (
-    <div className="bg-blue-600 w-full h-[250px] text-white rounded-2xl overflow-hidden">
-      <div className="bg-green-600 bg-cover bg-opacity-30 flex items-center justify-center h-full rounded-2xl">
+      <div className="w-full bg-green-700 flex items-center justify-center rounded-2xl">
         <h3 className="text text-xl font-bold"> Proyectos</h3>
-        <div className="flex overflow-hidden ">
-
-
-        </div>
+   
       </div>
-    </div>
   );
 }
 

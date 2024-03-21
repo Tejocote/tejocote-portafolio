@@ -1,8 +1,8 @@
 export default function Skills() {
   return (
-    <div className="h-full rounded-2xl w-4/6 overflow-hidden bg-blue-400">
+    <div className="h-[120px] rounded-2xl w-4/6 overflow-hidden bg-blue-400">
       <div className="flex w-full items-center justify-center">
-        <h3 className="text-lg font-semibold">Habilidades</h3>
+        <h3 className="text-lg font-semibold p-2">Habilidades</h3>
       </div>
       <div className="w-full inline-flex flex-nowrap overflow-hidden">
       <ul className="flex items-center gap-x-2  animate-infinite-scroll ">
