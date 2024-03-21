@@ -9,8 +9,17 @@ export default {
 			},
 			fontFamily: {
 				'onest' : ['Onest Variable', 'sans-serif']
-			}
+			},
+			animation: {
+        'infinite-scroll': 'infinite-scroll 15s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
 		}
 		},
 	plugins: [require('tailwindcss-animated')],
+}
 }
