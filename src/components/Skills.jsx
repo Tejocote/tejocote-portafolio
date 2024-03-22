@@ -1,10 +1,10 @@
 export default function Skills() {
   return (
-    <div className="flex flex-col items-center h-full rounded-2xl  overflow-hidden bg-blue-400">
+    <div className="flex flex-col items-center h-full rounded-2xl  overflow-hidden bg-blue-700">
       <div className="flex justify-center">
         <h3 className="text-lg font-semibold">Habilidades</h3>
       </div>
-      <div className="max-w-96 inline-flex [&_li]:mx-2 flex-nowrap overflow-hidden">
+      <div className="max-w-96 inline-flex relative [&_li]:mx-2 flex-nowrap overflow-hidden before:top-0 before:absolote before:left-0 before:bg-gradient-to-r before:from-blue-700 before:to-transparent">
       <ul className="flex items-center animate-infinite-scroll ">
         <li>
           <svg
