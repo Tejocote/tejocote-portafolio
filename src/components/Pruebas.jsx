@@ -12,16 +12,17 @@ export function Pruebas() {
   }
   const [btnState, setBtnState] = useState(false);
 
-  let toggleClassCheck = btnState ? "w-full h-full" : "text-white w-4/6 h-2/6 ";
-  let notProjects = btnState ? "duration-200 translate-x-10 opacity-0 h-0 w-0" : "opacity-100";
+  let toggleClassCheck = btnState ? "delay-200 w-full h-full" : "text-white w-4/6 h-2/6 ";
+  let notProjects = btnState ? "duration-300 transition-all opacity-0 h-0" : "duration-300 transition-all opacity-100";
 
   return (
-    <section className="h-[800px] px-2">
-      <div className="h-5/6 overflow-hidden flex flex-wrap justify-center">
+    <section className="h-[700px] px-2 mb-8">
+      <div className="h-full flex flex-wrap justify-center">
         <div className={`w-full h-1/3 p-2 ${notProjects}`}>
         <About/>
         </div>
-        <div onClick={handleClick} className={` transition-all p-2 ${toggleClassCheck}`}>
+        <div onClick={handleClick}
+         className={` transition-all p-2 ${toggleClassCheck}`}>
         <Projects/>
         </div>
         <div>
