@@ -1,6 +1,6 @@
 export default function Skills() {
   return (
-    <div className="h-1/6 rounded-2xl w-4/6 overflow-hidden bg-blue-400">
+    <div className="h-full rounded-2xl  overflow-hidden bg-blue-400">
       <div className="flex justify-center">
         <h3 className="text-lg font-semibold">Habilidades</h3>
       </div>
