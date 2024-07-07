@@ -1,16 +1,27 @@
 ---
-import BtnProjects from "./Projects.astro";
-import Redes from "./Redes.astro";
-import Skills from "./Skills.astro";
-import Projects from "./Projects.astro";
+import CldImage from "./CldImage.astro";
 ---
 
-<header class="sticky top-0">
-  <nav class="w-screen h-20 flex items-center justify-center bg-gradient-to-b from-[#ffffff33] bg-blur-lg">
-    <ul class="flex w-1/2 justify-around font-bold text-blue-900">
-      <li>Inicio</li>
-      <li>Experiencia</li>
-      <li>Proyectos</li>
-    </ul>
-  </nav>
-</header>
+<section class="w-screen mt-10 flex bg-[#303030]">
+  <div class="flex max-w-screen-md m-auto">
+    <div class="p-6">
+      <figure class="rounded-full overflow-hidden">
+        <CldImage
+          src="atyqpk6rki08xanwds0z"
+          alt="César Hernández desarrollador web frontend"
+          width="200"
+          height="200"
+        />
+      </figure>
+    </div>
+    <div class="w-4/6">
+      <h1 class="font-bold text-2xl text-white mt-6">César Hernández</h1>
+      <p class="max-w-prose text-pretty mt-2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, distinctio tempora eius quam incidunt neque sed! Porro magni architecto unde?
+      </p>
+      <p class="max-w-prose text-pretty mt-4">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, distinctio tempora eius quam incidunt neque sed! Porro magni architecto unde?
+      </p>
+    </div>
+  </div>
+</section>

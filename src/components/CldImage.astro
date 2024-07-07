@@ -1,0 +1,23 @@
+---
+import { Cloudinary } from "@cloudinary/url-gen";
+const cld = new Cloudinary({ cloud: { cloudName: "dlhwa4bsn" } });
+
+const { src, ...props } = Astro.props
+
+let cldSrc = cld.image(src);
+
+
+if (src.startsWith('http://')){
+  cldSrc.setDeliveryType('fetch')
+  
+}
+
+interface Props {
+  src: string;
+  width: string;
+  height?: string;
+  alt: string;
+}
+---
+
+<img class="aspect-square object-cover" src={cldSrc.toURL()} loading="lazy" {...props}/>
