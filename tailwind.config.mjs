@@ -3,15 +3,15 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
-			backgroundImage: {
-        'nebuverse': "url('https://nebuverse.netlify.app/poster.webp')",
-        'evergreen': "url('/evergreen.webp')",
-			},
 			fontFamily: {
-				'onest' : ['Onest Variable', 'sans-serif']
+        'satoshi': ['Satoshi', "Roboto"]
+      },
+			backgroundImage: {
+        'background': "url('/orange-background.jpg')",
 			},
+		
 			animation: {
-        'infinite-scroll': 'infinite-scroll 15s linear infinite',
+        'infinite-scroll': 'infinite-scroll 8s linear infinite',
       },
       keyframes: {
         'infinite-scroll': {

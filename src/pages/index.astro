@@ -3,13 +3,17 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import Experience from "../components/Experience.astro";
 import About from "../components/About.astro"
-import {Pruebas} from "../components/Pruebas.jsx"
 ---
 
 <Layout title="Bienvenido al tejocote portafolio." >
   <main>
-    <!-- <Hero /> -->
-    <Pruebas client:load />
+    <Hero />
     <About/>
+    <Experience/>
+    <Experience/>
+    <Experience/>
+    <Experience/>
+
+
   </main>
 </Layout>
