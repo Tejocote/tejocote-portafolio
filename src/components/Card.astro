@@ -4,20 +4,21 @@ interface Props {
 	body: string;
 	href: string;
 	src?: string;
+	color: string;
 }
 
-const { href, title, body, src } = Astro.props;
+const { href, title, body, src, color } = Astro.props;
 ---
 
-<div class="col-span-2 bg-[#303030] p-6 rounded-2xl text-white overflow-hidden">
+<div class=`col-span-2 py-6 rounded-2xl text-white bg-#[${color}]`>
 	<a href={href}>
-		<div class=`w-full rounded-t-2xl bg-[#101010] mb-2`>
-			<figure class="aspect-video ">
+		<div class=`w-full rounded-2xl bg-[#101010] mb-6`>
+			<picture class="">
 				<img src={src} alt="">
-			</figure>
+			</picture>
 		</div>
 		<div class="text-md">
-			<h2 class=`text-center text-lg font-bold mb-2`>
+			<h2 class=`text-center text-lg font-bold mb-3`>
 				{title}
 			</h2>
 			<p>
@@ -27,3 +28,4 @@ const { href, title, body, src } = Astro.props;
 		</div>
 	</a>
 </div>
+
