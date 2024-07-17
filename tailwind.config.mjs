@@ -6,9 +6,6 @@ export default {
 			fontFamily: {
         'satoshi': ['Satoshi', "Roboto"]
       },
-			backgroundImage: {
-        'background': "url('/orange-background.jpg')",
-			},
 		
 			animation: {
         'infinite-scroll': 'infinite-scroll 8s linear infinite',

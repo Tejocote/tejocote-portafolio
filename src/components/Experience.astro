@@ -9,27 +9,33 @@ import Card from "../components/Card.astro";
     </h3>
   </header>
   <div
-    class="grid text-center grid-cols-2 gap-4 max-w-screen-xl place-content-center sm:grid-cols-6 mt-4"
+    class="cards grid text-center grid-cols-2 gap-4 max-w-screen-xl place-content-center sm:grid-cols-6 mt-4"
   >
     <Card
       src="" 
       title="Nebuverse"
       body="Proyecto freelance que ofrece desarrollo de sitios web a negocios con gran escalabilidad"
       href="https://nebuverse.netlify.app/"
-      color="#D7EE7A"
+      hover="hover:bg-[#B366C8]"
     />
     <Card
     src="" 
       title="Evergreen Store"
       body="Tienda de ropa"
       href="#"
-      color="#B366C8"
+      hover="hover:bg-[#D7EE7A]"
     />
     <Card
       title="Otro proyecto"
       body="Este es Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, culpa."
       href="#"
-      color="#F8BB68"
+      hover="hover:bg-[#F8BB68]"
     />
   </div>
 </section>
+
+<style>
+.cards{
+  
+}
+</style>

@@ -4,15 +4,15 @@ interface Props {
 	body: string;
 	href: string;
 	src?: string;
-	color: string;
+	hover?: string;
 }
 
-const { href, title, body, src, color } = Astro.props;
+const { href, title, body, src, hover } = Astro.props;
 ---
 
-<div class=`col-span-2 py-6 rounded-2xl text-white bg-#[${color}]`>
+<div class=`col-span-2 px-2 mx-4 md:mx-0 py-6 bg-[#303030] rounded-2xl text-white transition-all shadow-lg hover:-translate-y-3 hover:bg-opacity-40 ${hover}`>
 	<a href={href}>
-		<div class=`w-full rounded-2xl bg-[#101010] mb-6`>
+		<div class=`h-60 mb-4 mx-2 md:mx-0 rounded-2xl bg-[#101010]`>
 			<picture class="">
 				<img src={src} alt="">
 			</picture>
