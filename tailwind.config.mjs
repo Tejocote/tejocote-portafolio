@@ -15,7 +15,13 @@ export default {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-100%)' },
         }
-		}
+		},
+    colors: {
+        'primary-blue': '#0F172A',   // Fondo
+        'secondary-blue': '#283e70', // Cards
+        'text-main': '#F5EFE6',      // Títulos
+        'text-muted': '#E8DFCA',    // Párrafos
+      },
 		},
 	plugins: [require('tailwindcss-animated')],
 }

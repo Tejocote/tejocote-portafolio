@@ -1,25 +1,27 @@
 ---
 import CldImage from "./CldImage.astro";
+import Skills from "./Skills.astro";
 ---
 
-<section class="max-w-screen-xl rounded-2xl mx-auto mt-10 flex bg-[#303030]">
+<section id="inicio" data-section="inicio" class="scroll-m-20 w-full mx-auto container md:max-w-lg rounded-2xl md:mt-10 flex">
   <div class="flex max-w-screen-md m-auto ">
-    <div class="p-8 py-10">
-      <figure class="rounded-full overflow-hidden">
+    <div class="p-4 py-10">
+      <figure class="rounded-md overflow-hidden">
         <CldImage
           src="q_auto:low/f_webp/ar_1:1,c_crop/atyqpk6rki08xanwds0z.jpg"
-          alt="César Hernández desarrollador web frontend"
+          alt="César Hernández desarrollador web"
           width="200"
           height="200"
         />
       </figure>
     </div>
-    <div class="my-auto flex flex-col justify-center">
-      <h1 class="font-bold text-2xl text-white">César Hernández</h1>
-      <p class="max-w-prose mt-2 text-lg text-pretty text-[#d4d4d4]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores porro quis sequi non sint explicabo iste mollitia excepturi hic! Odit.
+    <div class="flex flex-col justify-center">
+      <h2 class="font-bold text-2xl text-zinc-100">César Hernández</h2>
+      <p class="max-w-prose mt-2 text-lg text-pretty text-zinc-400">
+        Desarrollador javascript
       </p>
      
     </div>
   </div>
 </section>
+<Skills />

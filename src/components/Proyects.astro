@@ -1,0 +1,41 @@
+---
+import Card from "../components/Card.astro";
+---
+
+<section id="proyectos" class="flex flex-col md:mt-16 max-w-screen-xl m-auto" id="projects">
+  <header class="h-auto">
+    <h3 class="text-3xl text-center font-extrabold text-zinc-100 mt-8 mb-2 font-onest">
+      Conoce mi trabajo
+    </h3>
+  </header>
+  <div
+    class="cards grid text-center grid-cols-2 gap-2 px-2 md:grid-cols-3 md:gap-4 max-w-screen-xl place-content-center mt-4"
+  >
+    <Card
+      src="" 
+      title="Nebuverse"
+      body="Desarrollo de sitios web escalables"
+      href="https://nebuverse.netlify.app/"
+      hover="hover:bg-[#B366C8] hover:text-primary-blue hover:-translate-y-2 active:translate-y-2"
+    />
+    <Card
+    src="" 
+      title="Evergreen Store"
+      body="Tienda de ropa"
+      href="#"
+      hover="hover:bg-[#D7EE7A] hover:text-zinc-400  hover:-translate-y-2 active:translate-y-2"
+    />
+    <Card
+      title="Otro proyecto"
+      body="Este es Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, culpa."
+      href="#"
+      hover="hover:bg-[#F8BB68] hover:text-zinc-400 hover:-translate-y-2  active:translate-y-2"
+    />
+  </div>
+</section>
+
+<style>
+.cards{
+  
+}
+</style>

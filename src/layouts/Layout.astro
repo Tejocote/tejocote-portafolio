@@ -1,5 +1,6 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
+
 interface Props {
 	title: string;
 }
@@ -11,14 +12,14 @@ const { title } = Astro.props;
 <html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Este es mi portafolio web César Hernández" />
+		<meta name="description" content="Página web de los proyectos de César Hernández" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="" />
+		<link rel="icon" type="image/svg+xml" href="#" />
 		<ViewTransitions />
 		<title>{title}</title>
-		<link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/src/styles.css">
 	</head>
-	<body class="bg-[#202020]">
+	<body class="bg-primary-blue">
 		<slot />
 	</body>
 </html>
