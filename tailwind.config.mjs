@@ -8,7 +8,7 @@ export default {
       },
 		
 			animation: {
-        'infinite-scroll': 'infinite-scroll 8s linear infinite',
+        'infinite-scroll': 'infinite-scroll 2s linear infinite',
       },
       keyframes: {
         'infinite-scroll': {

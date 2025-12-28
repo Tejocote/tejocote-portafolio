@@ -1,0 +1,28 @@
+---
+import Header from '../components/Header.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="CRUD - Proyecto de César Hernández">
+  <Header/>
+  <main class="max-w-screen-lg m-auto p-4 text-zinc-100">
+    <h1 class="text-4xl font-bold mb-4">CRUD</h1>
+    <p class="mb-6">
+      Este proyecto de CRUD (Crear, Leer, Actualizar, Eliminar) está diseñado para gestionar una lista de tareas utilizando Astro y Tailwind CSS. Permite a los usuarios agregar nuevas tareas, ver la lista de tareas existentes, actualizar el estado de las tareas y eliminar tareas completadas.
+    </p>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">Características Principales</h2>
+      <ul class="list-disc list-inside">
+        <li>Interfaz de usuario limpia y responsiva con Tailwind CSS.</li>
+        <li>Funcionalidad completa de CRUD para la gestión de tareas.</li>
+        <li>Almacenamiento local para persistencia de datos entre sesiones.</li>
+        <li>Fácil integración y personalización.</li>
+      </ul>
+    </section>
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">Enlace al Proyecto</h2>
+      <a href="https://github.com/Tejocote/proyectopw" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">
+        Visitar el repositorio del CRUD
+      </a>
+    </section>
+  </main>

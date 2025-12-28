@@ -6,3 +6,8 @@
 html, body {
   height: 100%;
 }
+
+/* Smooth scrolling for anchor links */
+html { scroll-behavior: smooth; }
+/* Offset targets to account for sticky header */
+section[id], footer[id] { scroll-margin-top: 4rem; }
