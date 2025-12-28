@@ -1,18 +1,20 @@
 ---
 import CldImage from "./CldImage.astro";
 import Skills from "./Skills.astro";
+import cvImage from "../assets/cv-image.png";
 ---
 <div class="flex-col md:flex-row"> 
   <section id="inicio" data-section="inicio" class="scroll-m-20 w-full mx-auto container md:max-w-lg rounded-2xl md:mt-10 flex">
     <div class="flex max-w-screen-md m-auto ">
       <div class="p-4 py-10">
         <figure class="rounded-md overflow-hidden">
-          <CldImage
+          <!-- <CldImage
             src="q_auto:low/f_webp/ar_1:1,c_crop/atyqpk6rki08xanwds0z.jpg"
             alt="César Hernández desarrollador web"
             width="200"
             height="200"
-          />
+          /> -->
+          <img src={cvImage.src} alt="Cesar Hernández desarrollador web" class="w-28 h-28 md:w-64 md:h-64 object-cover backdrop-blur-sm  rounded-full bg-gradient-to-b from-blue-500 to-primary-blue"/>
         </figure>
       </div>
       <div class="flex flex-col justify-center">
