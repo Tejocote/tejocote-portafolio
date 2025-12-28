@@ -10,7 +10,7 @@ interface Props {
 const { href, title, body, src, hover } = Astro.props;
 ---
 
-<div class=`col-span-1 px-1 py-2 bg-secondary-blue/50 rounded-md border-solid border-zinc-200 text-zinc-400 transition-all ${hover}`>
+<div class=`col-span-1 px-1 py-3 bg-[#00030a]/30 rounded-md border-solid border-2 border-zinc-500 text-zinc-300 transition-all ${hover}`>
 	<a href={href}>
 		<div class=`h-40 mb-4 mx-2 md:h-60 rounded-md bg-[#101010]`>
 			<picture class="contain h-full w-full overflow-hidden rounded-md">
@@ -21,7 +21,7 @@ const { href, title, body, src, hover } = Astro.props;
 			<h2 class=`text-center text-lg font-bold mb-3 `>
 				{title}
 			</h2>
-			<p>
+			<p class="zinc-400">
 				{body}
 			</p>
 

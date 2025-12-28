@@ -1,0 +1,57 @@
+---
+const experiences = [
+  {
+    date: "2020 - Actualidad",
+    title: "Asociado de ventas",
+    company: "Tienda Santiana",
+    description:
+      "Trabajo en equipo · Colaboración con el personal para la gestión de inventarios · Manejo de Datos · Experiencia en la actualización de bases de datos de ventas y clientes · Atención al cliente · Adaptación a las necesidades de los clientes, ofreciendo soluciones y orientación sobre los productos.",
+  },
+  {
+    date: "2023 - 2024",
+    title: "Profesor de natación",
+    company: "Mara Sports",
+    description:
+      "Facilidad de adaptación · Capacidad para ajustar métodos de enseñanza y comunicación según el nivel y necesidades de diversos grupos · Atención al detalle · Supervisión del cumplimiento de normas de seguridad, manteniendo un control estricto de los protocolos · Responsabilidad · Gestión de grupos bajo presión, priorizando siempre la seguridad y el aprendizaje de los alumnos.",
+  },
+];
+---
+
+<section  id="experiencia" class="py-16">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
+      Experiencia Laboral
+    </h2>
+
+    <div class="relative w-full grid-cols-1 content-center md:mt-8">
+      <!-- Línea central -->
+      <div class="absolute  w-0.5 h-full bg-gray-700"></div>
+
+      {experiences.map((exp, index) => (
+        <div class={`relative m-auto flex items-center justify-between md:justify-normal md:${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} w-full mb-12`}>
+          <!-- Tarjeta -->
+          <div class="max-w-md w-full px-4">
+            <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700">
+              <time class="text-sm font-semibold text-indigo-400">
+                {exp.date}
+              </time>
+              <h3 class="text-xl font-bold mt-2 text-white">
+                {exp.title}
+              </h3>
+              <p class="text-gray-400 font-medium">
+                {exp.company}
+              </p>
+              <p class="mt-4 text-gray-300 text-sm leading-relaxed">
+                {exp.description}
+              </p>
+            </div>
+          </div>
+
+          <!-- Punto en la línea -->
+          <div class="block absolute transform -translate-x-1/2 w-5 h-5 bg-indigo-600 rounded-full border-4 border-gray-900 z-10"></div>
+
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
