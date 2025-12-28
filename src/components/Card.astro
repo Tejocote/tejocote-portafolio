@@ -1,31 +1,39 @@
 ---
+import { Image } from "astro:assets";
+
 interface Props {
-	title: string;
-	body: string;
-	href: string;
-	src?: string;
-	hover?: string;
+  title: string;
+  body: string;
+  href: string;
+  src?: string;
+  hover?: string;
+  transitionName?: string;
 }
 
-const { href, title, body, src, hover } = Astro.props;
+const { href, title, body, src, hover, transitionName } = Astro.props;
 ---
 
-<div class=`col-span-1 px-1 py-3 bg-[#00030a]/30 rounded-md border-solid border-2 border-zinc-500 text-zinc-300 transition-all ${hover}`>
-	<a href={href}>
-		<div class=`h-40 mb-4 mx-2 md:h-60 rounded-md bg-[#101010]`>
-			<picture class="contain h-full w-full overflow-hidden rounded-md">
-				<img src={src} alt="">
-			</picture>
-		</div>
-		<div class="text-md">
-			<h2 class=`text-center text-lg font-bold mb-3 `>
-				{title}
-			</h2>
-			<p class="zinc-400">
-				{body}
-			</p>
-
-		</div>
-	</a>
+<div
+  class=`col-span-1 px-1 py-3 bg-[#00030a]/30 rounded-md border-solid border-2 border-zinc-500 text-zinc-300 transition-all ${hover}`
+>
+  <a href={href}>
+    <div class=`h-40 mb-4 mx-2 md:h-60 rounded-md bg-[#101010]`>
+      <img
+        transition:name={transitionName}
+        src={src}
+        width="800"
+        height="400"
+        alt={title}
+        class="rounded-md mb-6 w-full h-auto object-cover"
+      />
+    </div>
+    <div class="text-md">
+      <h2 class=`text-center text-lg font-bold mb-3 `>
+        {title}
+      </h2>
+      <p class="zinc-400">
+        {body}
+      </p>
+    </div>
+  </a>
 </div>
-

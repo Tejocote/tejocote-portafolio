@@ -11,3 +11,14 @@ html, body {
 html { scroll-behavior: smooth; }
 /* Offset targets to account for sticky header */
 section[id], footer[id] { scroll-margin-top: 4rem; }
+
+/* View transition helpers */
+@supports (view-transition-name: none) {
+  img[style*="view-transition-name"] {
+    will-change: transform, opacity;
+  }
+  /* Slight easing for the image during transitions */
+  ::view-transition-old(img[style*="view-transition-name"]), ::view-transition-new(img[style*="view-transition-name"]) {
+    transition: transform 400ms ease, opacity 300ms ease;
+  }
+}

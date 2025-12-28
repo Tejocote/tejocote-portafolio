@@ -1,6 +1,5 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
-
+import { ClientRouter } from "astro:transitions";
 interface Props {
 	title: string;
 }
@@ -15,11 +14,28 @@ const { title } = Astro.props;
 		<meta name="description" content="Página web de los proyectos de César Hernández" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="#" />
-		<ViewTransitions />
 		<title>{title}</title>
 		<link rel="stylesheet" href="/src/styles.css">
+		<ClientRouter />
 	</head>
 	<body class="bg-primary-blue">
 		<slot />
 	</body>
 </html>
+
+<style is:global>
+  @keyframes bump {
+    0% {
+      opacity: 0;
+      transform: scale(1) translateX(200px);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) translateX(0);
+    }
+  }
+</style>
