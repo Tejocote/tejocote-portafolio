@@ -1,7 +1,10 @@
 ---
-import CesarImg from '../assets/cesar-img.jpg';
+import CesarImg from "../assets/cesar-img.jpg";
+import CV from "../assets/CV-Cesar-Hernandez.pdf";
 ---
-<footer id="about"
+
+<footer
+  id="about"
   class="mt-4 md:mt-12 flex text-white bg-primary-blue py-8 flex-col md:flex-row items-center justify-center"
 >
   <div class="md:mr-8 max-w-prose">
@@ -9,19 +12,41 @@ import CesarImg from '../assets/cesar-img.jpg';
       <header class="text-2xl font-bold mb-8 bg-clip-text">
         <h3 class="text-center text-zinc-100">Acerca de mí</h3>
       </header>
-      <p class="max-w-prose  text-zinc-400 text-pretty mb-2">
-        Estudiante de octavo semestre de Ingeniería en Computación, con interés en desarrollo web, autodidacta. 
+      <p class="max-w-prose text-zinc-400 text-pretty mb-2">
+        Estudiante de octavo semestre de Ingeniería en Computación, con interés
+        en desarrollo web, autodidacta.
       </p>
     </div>
     <div class="px-4 text-zinc-400 max-w-prose">
-      Constantemente estudiando las herramientas y tecnologías más recientes, con el fin de crear aplicaciones eficientes e intuitivas.
+      Constantemente estudiando las herramientas y tecnologías más recientes,
+      con el fin de crear aplicaciones eficientes e intuitivas.
     </div>
   </div>
-  <div>
+  <div class="flex-col items-center justify-center">
     <img
       src={CesarImg.src}
       alt="César Hernández"
-      class="w-32 h-32 mt-4 object-cover md:mt-0 mr-auto rounded-md border-4 border-secondary-blue">
-    </img>
+      class="w-32 h-32 mt-4 object-cover md:mt-0 mr-auto rounded-md border-2 mx-auto border-zinc-600"
+    />
+    <div class="w-full text-center mt-6 text-zinc-400 text-sm">
+    <p class="mb-4">Contáctame</p>
+    <div class="flex justify-center gap-4">
+      <a
+        href="mailto:cesarhernndezyes@gmail.com"
+        aria-label="Enviar email a César"
+        class="inline-block bg-secondary-blue text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors"
+      >
+        Enviar email
+      </a>
+
+      <a
+        href={CV}
+        download="CV-Cesar-Hernandez.pdf"
+        aria-label="Descargar CV de César"
+        class="inline-block border border-zinc-600 text-zinc-100 px-4 py-2 rounded-md hover:bg-zinc-800 transition-colors"
+      >
+        Descargar CV
+      </a>
+    </div>
   </div>
 </footer>
