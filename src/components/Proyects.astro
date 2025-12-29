@@ -1,5 +1,6 @@
 ---
 import Card from "../components/Card.astro";
+import CrudImg from '../assets/proyectoCRUD.png';
 ---
 
 <section id="proyectos" class="flex flex-col md:mt-16 max-w-screen-xl m-auto" id="projects">
@@ -11,27 +12,30 @@ import Card from "../components/Card.astro";
   <div
     class="cards grid text-center grid-cols-2 gap-3 px-2 md:gap-4 max-w-screen-md mx-auto place-content-center mt-4"
   >
+   <Card
+   src={CrudImg.src}
+      title="proyecto CRUD"
+      body="Aplicación para gestionar una base de datos MySQL usando Node.js y Express."
+      href="/crud"
+      transitionName="crud-img"
+      hover="hover:text-zinc-100 hover:border-zinc-100 active:translate-y-2"
+    />
     <Card
       src="https://raw.githubusercontent.com/SuaveV9/Portfolio-1.0/refs/heads/master/public/Project-1.webp" 
       title="Nebuverse"
       body="Desarrollo de sitios web escalables"
       href="/nebuverse"
       transitionName="nebuverse-img"
-      hover="hover:text-zinc-100 hover:-translate-y-2 active:translate-y-2"
+      hover="hover:text-zinc-100 hover:border-zinc-100 active:translate-y-2"
     />
     <Card
-    src="" 
+      src="" 
       title="Evergreen Store"
       body="Tienda de ropa"
       href="/evergreen"
-      hover="hover:text-zinc-100 hover:-translate-y-2 active:translate-y-2"
+      hover="hover:text-zinc-100 hover:border-zinc-100 active:translate-y-2"
     />
-    <Card
-      title="proyecto CRUD"
-      body="Aplicación para gestionar una base de datos MySQL usando Node.js y Express."
-      href="/crud"
-      hover="hover:text-zinc-100 hover:-translate-y-2 active:translate-y-2"
-    />
+   
   </div>
 </section>
 

@@ -13,11 +13,11 @@ interface Props {
 const { href, title, body, src, hover, transitionName } = Astro.props;
 ---
 
-<div
-  class=`col-span-1 px-1 py-3 bg-[#00030a]/30 rounded-md border-solid border-2 border-zinc-500 text-zinc-300 transition-all ${hover}`
+<div aria-label="Proyecto"
+  class=`col-span-1 px-1 py-3 bg-[#00030a]/30 rounded-md border-solid border-2 border-zinc-600 text-zinc-300 transition-all ${hover}`
 >
-  <a href={href}>
-    <div class=`h-40 justify-center flex mb-4 mx-2 md:h-60 rounded-md bg-[#101010]`>
+  <a id="Proyecto" href={href}>
+    <div class=`h-auto justify-center flex mb-4 mx-2 md:h-60 rounded-md `>
       <img
         transition:name={transitionName}
         src={src}
