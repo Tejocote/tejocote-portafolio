@@ -1,6 +1,4 @@
 ---
-import CldImage from "./CldImage.astro";
-import Skills from "./Skills.astro";
 import cvImage from "../assets/cv-image.png";
 ---
 
@@ -8,17 +6,11 @@ import cvImage from "../assets/cv-image.png";
   <section
     id="inicio"
     data-section="inicio"
-    class="scroll-m-20 w-full mx-auto container md:max-w-lg rounded-2xl md:mt-10 flex"
+    class="w-full mx-auto container max-w-lg mt-12 flex"
   >
     <div class="flex max-w-screen-md m-auto">
-      <div class="p-4 py-10">
+      <div class="p-4 ">
         <figure class="rounded-md overflow-hidden">
-          <!-- <CldImage
-            src="q_auto:low/f_webp/ar_1:1,c_crop/atyqpk6rki08xanwds0z.jpg"
-            alt="César Hernández desarrollador web"
-            width="200"
-            height="200"
-          /> -->
           <img
             src={cvImage.src}
             alt="Cesar Hernández desarrollador web"
@@ -27,12 +19,12 @@ import cvImage from "../assets/cv-image.png";
         </figure>
       </div>
       <div class="flex flex-col justify-center mx-2">
-        <h2 class="font-bold text-lg md:text-2xl text-zinc-100">
-          César Hernández
-        </h2>
+        <h2 class="font-bold text-xl text-zinc-100">César Hernández</h2>
         <p class="max-w-prose mt-2 text-md text-pretty text-zinc-400">
-          Desarrollador <span class="text-amber-300">Javascript</span> | Frontend
-          | Backend, consumo de APIs, uso de react.
+          <span class="block"
+            >Desarrollador <b class="text-amber-400">Javascript</b></span
+          >
+          Frontend | Backend, consumo de APIs, uso de react.
         </p>
         <div class="flex items-center py-2 mx-2 gap-4 mt-4">
           <a
